@@ -1,0 +1,59 @@
+.header {
+		// .header__body
+
+		&__body {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+		}
+
+		// .header__title
+
+		&__title {
+            a {
+                display: block;
+                text-decoration: none;
+                max-width: 84px;
+                img {
+                    object-fit: contain;
+                    display: block;
+                    box-sizing: border-box;
+                    width: 100%;
+                }
+            }
+		}
+
+		// .header__search
+
+		&__search {
+		}
+
+		// .header__nav
+
+		&__nav {
+            margin-right: auto;
+		}
+
+		// .header__profile
+
+		&__profile {
+		}
+
+		// .header__profile-item
+
+		&__profile-item {
+		}
+
+		// .header__actions
+
+		&__actions {
+		}
+}
+.container {
+}
+.header-favorite {
+}
+.fav-count {
+}
+.header-cart {
+}

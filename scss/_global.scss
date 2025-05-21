@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+$white: #fff;
+
+
+.container {
+    max-width: calc(1264px + 30px);
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 15px;
+}
