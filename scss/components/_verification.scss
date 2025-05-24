@@ -1,0 +1,142 @@
+.verification-form {
+
+    // .verification-form__wrap
+
+    &__wrap {
+        margin-top: 50px;
+
+        .container {
+            display: flex;
+            box-sizing: border-box;
+            padding: 40px 40px;
+            background-color: #fff;
+            border-radius: 10px;
+        }
+
+        .col {
+            width: 50%;
+            box-sizing: border-box;
+        }
+    }
+
+    // .verification-form__title
+
+    &__title {
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        h1 {
+            margin: 0;
+            box-sizing: border-box;
+            display: block;
+            font-size: 36px;
+            line-height: 1.4;
+        }
+
+        p {
+            margin: 0;
+            font-size: 14px;
+            line-height: 1.4;
+            color: $black;
+        }
+    }
+
+    // .verification-form__form
+
+    &__form {
+        box-sizing: border-box;
+
+        form {
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+
+            h2 {
+                display: block;
+                width: 100%;
+            }
+
+            span.label-name {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                color: $gray2;
+                font-size: 14px;
+                margin-bottom: 4px;
+                line-height: 1.4;
+            }
+
+            label {
+                width: 100%;
+                position: relative;
+                i {
+                    position: absolute;
+                    right: 15px;
+                    top: calc(50% +  2px);
+                    svg {
+                        width: 13px;
+                        height: 16px;
+                    }
+                }
+                &.req {
+                    &::after {
+                        content: '*';
+                        font-size: 16px;
+                        color: $accent;
+                        right: -15px;
+                        position: absolute;
+                        bottom: 30px;
+                    }
+                }
+
+                span {
+                    display: block;
+                }
+
+                &.half {
+                    width: calc(50% - 15px);
+                }
+
+                input {
+                    width: 100%;
+                    box-sizing: border-box;
+                }
+
+                input {
+                    padding: 15px;
+                    box-sizing: border-box;
+                    border: none;
+                    border-radius: 8px;
+                    background-color: $gray;
+                }
+            }
+        }
+    }
+}
+
+.container {}
+
+
+.req {}
+
+.label-name {}
+
+.half {}
+
+.check-label {}
+
+.checkbox {}
+
+.item {}
+
+.checkbox-item {}
+
+.decor {}
+
+.action {}
+
+.back {}
+
+.info {}
