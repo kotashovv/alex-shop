@@ -328,6 +328,25 @@ body {
   padding: 0 15px;
 }
 
+.main-btn {
+  text-align: center;
+  color: #fff;
+  background-color: #FC7361;
+  border-radius: 8px;
+  padding: 11.5px 15px;
+  display: block;
+  width: 100%;
+  max-width: 550px;
+  text-decoration: none;
+  border: none;
+  -webkit-transition: 0.35s ease;
+  transition: 0.35s ease;
+  cursor: pointer;
+}
+.main-btn:hover {
+  background-color: #484134;
+}
+
 .breadcrumbs {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -702,4 +721,52 @@ body {
   border: none;
   border-radius: 8px;
   background-color: #F9F9F9;
+}
+
+.invite-hero {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.hero {
+  padding: 100px 0;
+  background-color: #A4A0A0;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: url(../../assets/imgs/invite-hero.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+.hero__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+.hero__text h1 {
+  margin: 0;
+  margin-bottom: 20px;
+  /* h1 */
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 140%;
+}
+.hero__text p {
+  margin: 0 auto;
+  max-width: 620px;
+  display: block;
+  font-size: 18px;
+  line-height: 1.4;
+  margin-bottom: 50px;
+}
+.hero__text .main-btn {
+  max-width: 250px;
+  margin: 0 auto;
 }

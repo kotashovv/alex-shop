@@ -5,13 +5,16 @@ $gray: #F9F9F9;
 $gray2: #A4A0A0;
 $accent: #FC7361;
 $black: #212121;
+$accent2: #484134;
 
 body {
     font-family: 'Roboto', sans-serif;
 }
+
 .wrapper {
     background-color: $gray;
 }
+
 .container {
     max-width: calc(1264px + 30px);
     box-sizing: border-box;
@@ -19,9 +22,28 @@ body {
     padding: 0 15px;
 }
 
+.main-btn {
+    text-align: center;
+    color: #fff;
+    background-color: $accent;
+    border-radius: 8px;
+    padding: 11.5px 15px;
+    display: block;
+    width: 100%;
+    max-width: 550px;
+    text-decoration: none;
+    border: none;
+    transition: .35s ease;
+    cursor: pointer;
+    &:hover {
+        background-color: $accent2;
+    }
+}
+
 .breadcrumbs {
     display: flex;
     align-items: stretch;
+
     a {
         position: relative;
         display: block;
@@ -30,7 +52,8 @@ body {
         text-decoration: none;
         margin-right: 8px;
         padding-right: 11px;
-        &::before{
+
+        &::before {
             content: '';
             position: absolute;
             right: 0;
@@ -40,9 +63,11 @@ body {
             height: 5px;
             background-color: $black;
         }
+
         &:last-child {
             color: $black;
             pointer-events: none;
+
             &::before {
                 display: none;
                 margin-right: 0;
