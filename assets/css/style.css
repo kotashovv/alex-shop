@@ -739,6 +739,11 @@ body {
 .verification-form__form form label input.error {
   border: 1px solid #FC7361;
 }
+.verification-form__form form label .iti {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 .verification-form__form .action {
   width: 100%;
   -webkit-box-sizing: border-box;

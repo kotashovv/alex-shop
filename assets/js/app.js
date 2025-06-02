@@ -5,20 +5,16 @@ document.addEventListener('DOMContentLoaded', () => {
     if (checkLabels.length != 0) {
         checkLabels.forEach(label => {
             label.addEventListener('click', function (e) {
-                // Не даём сработать двойному клику на input
                 if (e.target.tagName.toLowerCase() === 'input') return;
 
                 const checkbox = label.querySelector('input[type="checkbox"]');
                 const checkboxItem = label.querySelector('.checkbox-item');
-                // Инвертируем состояние чекбокса
                 checkbox.checked = !checkbox.checked;
-                // Добавляем или убираем класс active
                 if (checkbox.checked) {
                     checkboxItem.classList.add('active');
                 } else {
                     checkboxItem.classList.remove('active');
                 }
-                // Предотвращаем стандартное поведение
                 e.preventDefault();
             });
 
@@ -73,5 +69,22 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    const phoneInput = document.querySelector("#phone");
+    if (phoneInput && window.intlTelInput) {
+        const iti = window.intlTelInput(phoneInput, {
+            initialCountry: "us",
+            preferredCountries: ["us", "ru", "ua", "kz"],
+            utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.6/build/js/utils.js"
+        });
 
+        function updatePlaceholder() {
+            const countryData = iti.getSelectedCountryData();
+            const dialCode = countryData.dialCode ? `+${countryData.dialCode}` : "";
+            phoneInput.placeholder = dialCode;
+        }
+
+        updatePlaceholder();
+
+        phoneInput.addEventListener("countrychange", updatePlaceholder);
+    }
 })
