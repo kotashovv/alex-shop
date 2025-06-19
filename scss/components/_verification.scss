@@ -12,10 +12,12 @@
             padding: 40px 40px;
             background-color: #fff;
             border-radius: 10px;
+            margin: 0 40px;
         }
 
         .col {
-            width: 50%;
+            max-width: 605px;
+            width: 100%;
             box-sizing: border-box;
         }
     }
@@ -266,6 +268,44 @@
         a {
             color: $accent;
             text-decoration: none;
+        }
+    }
+}
+
+@media(max-width:920px) {
+    .verification-form {
+        &__wrap {
+            .col {
+                width: 65%;
+            }
+            .container {
+                margin: 0 20px;
+            }
+        }
+        &__form {
+            form {
+                label {
+                    &.half {
+                        width: 100%;
+                        box-sizing: border-box;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:620px) {
+    .verification-form {
+        &__wrap {
+            .col {
+                width: 100%;
+                box-sizing: border-box;
+            }
+            .container {
+                padding: 40px 20px;
+                margin: 0;
+            }
         }
     }
 }
