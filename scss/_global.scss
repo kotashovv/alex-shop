@@ -123,3 +123,11 @@ body {
     color: $black;
     line-height: 1.4;
 }
+
+.decor-container {
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #D6D2D2;
+    border-radius: 20px;
+}
