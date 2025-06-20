@@ -2,768 +2,395 @@
 
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>Alex</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="wrapper">
-        <header class="header">
-            <div class="container">
-                <div class="header__body">
-                    <div class="header__title">
-                        <a href="#">
-                            <img src="assets/imgs/icons/title.svg" alt="">
-                        </a>
-                    </div>
-                    <div class="header__search">
-                        <form action="#">
-                            <button>
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="7.33168" cy="7.19234" r="5.35902" stroke="#A4A0A0" stroke-width="1.5"
-                                        stroke-linecap="square" />
-                                    <path d="M10.9922 11.139L14.0278 14.1667" stroke="#A4A0A0" stroke-width="1.5"
-                                        stroke-linecap="square" />
-                                </svg>
-
-                            </button>
-                            <input type="text" placeholder="Search the site...">
-                        </form>
-                    </div>
-                    <nav class="header__nav">
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    All products
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Home
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Creators
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Travel Insights
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="header__profile">
-                        <a class="header__profile-item" href="#">
-                            <img src="assets/imgs/icons/profile-icon.svg" alt="">
-                            <span>
-                                @talmaev1
-                            </span>
-                        </a>
-                    </div>
-                    <div class="header__actions">
-                        <a class="header-favorite" href="#">
-                            <img src="assets/imgs/icons/fav-icon.svg" alt="">
-                            <span class="fav-count">10</span>
-                        </a>
-                        <a href="#" class="header-cart">
-                            <img src="assets/imgs/icons/cart.svg" alt="">
-                            <span class="fav-count">10</span>
-                        </a>
-                    </div>
-                </div>
+      <header class="header">
+        <div class="container">
+          <div class="header__body">
+            <div class="header__title">
+              <a href="#">
+                <img src="assets/imgs/icons/title.svg" alt="" />
+              </a>
             </div>
-        </header>
-        <div class="the-content">
-            <section class="invite-hero hero">
-                <div class="container">
-                    <div class="invite-hero__text hero__text">
-                        <h1>
-                            Turn Your Travel Passion into Profit
-                        </h1>
-                        <p>
-                            Join TrekGuider to monetize your travel expertise and reach a global audience. It's simple,
-                            profitable, and built for creators like you.
-                        </p>
-                        <a class="main-btn" href="#">Get Started</a>
-                    </div>
-                </div>
-            </section>
-            <section class="invite-calc">
-                <div class="container">
-                    <div class="invite-calc__wrap">
-                        <h2 class="section-title">
-                            Estimate Your Annual Income
-                        </h2>
-                    </div>
-                    <div class="invite-calc__row">
-                        <div class="invite-calc__calc-wrap">
-                            <form class="invite-calc__calc label-parent">
-                                <label>
-                                    <span>
-                                        Average Product Price (USD)
-                                    </span>
-                                    <input type="number" placeholder="50">
-                                    <i>
-                                        <svg width="14" height="16" viewBox="0 0 14 16" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M6.9987 10.0001C6.82189 10.0001 6.65232 9.92988 6.5273 9.80486C6.40227 9.67983 6.33203 9.51026 6.33203 9.33345C6.35679 8.89783 6.48932 8.47517 6.71773 8.1034C6.94614 7.73164 7.26329 7.4224 7.6407 7.20345C7.88732 7.06829 8.08472 6.8584 8.20451 6.60396C8.3243 6.34952 8.36031 6.06365 8.30737 5.78745C8.25602 5.52364 8.12706 5.28118 7.93701 5.09114C7.74697 4.9011 7.50451 4.77213 7.2407 4.72078C7.04812 4.68524 6.85007 4.69255 6.66064 4.74221C6.47121 4.79186 6.29504 4.88263 6.14465 5.00807C5.99426 5.13351 5.87336 5.29053 5.79052 5.46798C5.70768 5.64543 5.66495 5.83895 5.66537 6.03478C5.66537 6.2116 5.59513 6.38116 5.4701 6.50619C5.34508 6.63121 5.17551 6.70145 4.9987 6.70145C4.82189 6.70145 4.65232 6.63121 4.5273 6.50619C4.40227 6.38116 4.33203 6.2116 4.33203 6.03478C4.33197 5.64529 4.41722 5.2605 4.58181 4.90749C4.7464 4.55448 4.98632 4.2418 5.2847 3.99145C5.56987 3.75305 5.90173 3.5769 6.25898 3.47431C6.61623 3.37171 6.99098 3.34493 7.35919 3.39568C7.7274 3.44643 8.08093 3.5736 8.3971 3.76902C8.71328 3.96445 8.9851 4.22381 9.19514 4.53047C9.40518 4.83712 9.54879 5.1843 9.61676 5.54972C9.68473 5.91515 9.67556 6.29074 9.58983 6.65241C9.5041 7.01408 9.34371 7.35384 9.11896 7.64988C8.8942 7.94591 8.61003 8.1917 8.2847 8.37145C8.11614 8.47532 7.973 8.61566 7.86582 8.78214C7.75864 8.94862 7.69014 9.13701 7.66537 9.33345C7.66537 9.51026 7.59513 9.67983 7.47011 9.80486C7.34508 9.92988 7.17551 10.0001 6.9987 10.0001ZM7.52737 15.8401C8.96737 15.2615 13.6654 12.9861 13.6654 8.02878V4.58145C13.6661 3.88079 13.4457 3.19777 13.0356 2.62966C12.6255 2.06156 12.0466 1.63735 11.3814 1.41745L7.2087 0.0341179C7.07248 -0.0118609 6.92493 -0.0118609 6.7887 0.0341179L2.61603 1.41745C1.95077 1.63735 1.37187 2.06156 0.961767 2.62966C0.551669 3.19777 0.331294 3.88079 0.332033 4.58145V8.02878C0.332033 12.4035 5.00203 15.0795 6.43403 15.7955C6.60716 15.8997 6.79896 15.9693 6.9987 16.0001C7.18333 15.9801 7.36262 15.9258 7.52737 15.8401ZM10.9614 2.68278C11.3604 2.81506 11.7076 3.0697 11.9536 3.41054C12.1997 3.75138 12.3321 4.16108 12.332 4.58145V8.02878C12.332 12.1508 8.27403 14.1028 7.03003 14.6028C5.77137 13.9735 1.66537 11.6395 1.66537 8.02878V4.58145C1.66531 4.16108 1.79771 3.75138 2.04377 3.41054C2.28982 3.0697 2.63702 2.81506 3.03603 2.68278L6.9987 1.36945L10.9614 2.68278ZM6.9987 11.3335C6.86685 11.3335 6.73795 11.3726 6.62832 11.4458C6.51869 11.5191 6.43324 11.6232 6.38278 11.745C6.33232 11.8668 6.31912 12.0009 6.34484 12.1302C6.37057 12.2595 6.43406 12.3783 6.5273 12.4715C6.62053 12.5648 6.73932 12.6283 6.86864 12.654C6.99796 12.6797 7.13201 12.6665 7.25382 12.616C7.37564 12.5656 7.47976 12.4801 7.55301 12.3705C7.62627 12.2609 7.66537 12.132 7.66537 12.0001C7.66537 11.8233 7.59513 11.6537 7.47011 11.5287C7.34508 11.4037 7.17551 11.3335 6.9987 11.3335Z"
-                                                fill="#A4A0A0" />
-                                        </svg>
-
-                                    </i>
-                                </label>
-                                <label>
-                                    <span>
-                                        Monthly Sales
-                                    </span>
-                                    <input type="number" placeholder="100">
-                                    <i>
-                                        <svg width="14" height="16" viewBox="0 0 14 16" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M6.9987 10.0001C6.82189 10.0001 6.65232 9.92988 6.5273 9.80486C6.40227 9.67983 6.33203 9.51026 6.33203 9.33345C6.35679 8.89783 6.48932 8.47517 6.71773 8.1034C6.94614 7.73164 7.26329 7.4224 7.6407 7.20345C7.88732 7.06829 8.08472 6.8584 8.20451 6.60396C8.3243 6.34952 8.36031 6.06365 8.30737 5.78745C8.25602 5.52364 8.12706 5.28118 7.93701 5.09114C7.74697 4.9011 7.50451 4.77213 7.2407 4.72078C7.04812 4.68524 6.85007 4.69255 6.66064 4.74221C6.47121 4.79186 6.29504 4.88263 6.14465 5.00807C5.99426 5.13351 5.87336 5.29053 5.79052 5.46798C5.70768 5.64543 5.66495 5.83895 5.66537 6.03478C5.66537 6.2116 5.59513 6.38116 5.4701 6.50619C5.34508 6.63121 5.17551 6.70145 4.9987 6.70145C4.82189 6.70145 4.65232 6.63121 4.5273 6.50619C4.40227 6.38116 4.33203 6.2116 4.33203 6.03478C4.33197 5.64529 4.41722 5.2605 4.58181 4.90749C4.7464 4.55448 4.98632 4.2418 5.2847 3.99145C5.56987 3.75305 5.90173 3.5769 6.25898 3.47431C6.61623 3.37171 6.99098 3.34493 7.35919 3.39568C7.7274 3.44643 8.08093 3.5736 8.3971 3.76902C8.71328 3.96445 8.9851 4.22381 9.19514 4.53047C9.40518 4.83712 9.54879 5.1843 9.61676 5.54972C9.68473 5.91515 9.67556 6.29074 9.58983 6.65241C9.5041 7.01408 9.34371 7.35384 9.11896 7.64988C8.8942 7.94591 8.61003 8.1917 8.2847 8.37145C8.11614 8.47532 7.973 8.61566 7.86582 8.78214C7.75864 8.94862 7.69014 9.13701 7.66537 9.33345C7.66537 9.51026 7.59513 9.67983 7.47011 9.80486C7.34508 9.92988 7.17551 10.0001 6.9987 10.0001ZM7.52737 15.8401C8.96737 15.2615 13.6654 12.9861 13.6654 8.02878V4.58145C13.6661 3.88079 13.4457 3.19777 13.0356 2.62966C12.6255 2.06156 12.0466 1.63735 11.3814 1.41745L7.2087 0.0341179C7.07248 -0.0118609 6.92493 -0.0118609 6.7887 0.0341179L2.61603 1.41745C1.95077 1.63735 1.37187 2.06156 0.961767 2.62966C0.551669 3.19777 0.331294 3.88079 0.332033 4.58145V8.02878C0.332033 12.4035 5.00203 15.0795 6.43403 15.7955C6.60716 15.8997 6.79896 15.9693 6.9987 16.0001C7.18333 15.9801 7.36262 15.9258 7.52737 15.8401ZM10.9614 2.68278C11.3604 2.81506 11.7076 3.0697 11.9536 3.41054C12.1997 3.75138 12.3321 4.16108 12.332 4.58145V8.02878C12.332 12.1508 8.27403 14.1028 7.03003 14.6028C5.77137 13.9735 1.66537 11.6395 1.66537 8.02878V4.58145C1.66531 4.16108 1.79771 3.75138 2.04377 3.41054C2.28982 3.0697 2.63702 2.81506 3.03603 2.68278L6.9987 1.36945L10.9614 2.68278ZM6.9987 11.3335C6.86685 11.3335 6.73795 11.3726 6.62832 11.4458C6.51869 11.5191 6.43324 11.6232 6.38278 11.745C6.33232 11.8668 6.31912 12.0009 6.34484 12.1302C6.37057 12.2595 6.43406 12.3783 6.5273 12.4715C6.62053 12.5648 6.73932 12.6283 6.86864 12.654C6.99796 12.6797 7.13201 12.6665 7.25382 12.616C7.37564 12.5656 7.47976 12.4801 7.55301 12.3705C7.62627 12.2609 7.66537 12.132 7.66537 12.0001C7.66537 11.8233 7.59513 11.6537 7.47011 11.5287C7.34508 11.4037 7.17551 11.3335 6.9987 11.3335Z"
-                                                fill="#A4A0A0" />
-                                        </svg>
-
-                                    </i>
-                                </label>
-                                <div class="action">
-                                    <button class="main-btn">Calculate</button>
-                                </div>
-                            </form>
-                            <span class="invite-calc__info">
-                                Calculations based on avg. 5% platform commission, 2.9% + $0.30 payment processing, and
-                                0.25% + $0.25 payout fees.
-                            </span>
-                        </div>
-                        <div class="invite-calc__result">
-                            <span>You Could Earn: </span>
-                            <div class="invite-calc__total">
-                                <span>$10 000
-                                </span> Annually
-                            </div>
-                            <span class="invite-calc__info">
-                                Estimate Only. Your actual income will depend on your sales.
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="invite-launch">
-                <div class="container">
-                    <div class="invite-launch__title">
-                        <h2 class="section-title">
-                            Estimate Only. Your actual income will depend on your sales.
-                        </h2>
-                    </div>
-                    <div class="invite-launch__items">
-                        <div class="item">
-                            <div class="num">
-                                <span>1</span>
-                            </div>
-                            <div class="text">
-                                <h3>
-                                    Sign Up & Verify
-                                </h3>
-                                <p>
-                                    Create your seller account in minutes and get instantly verified.
-                                </p>
-                                <a href="#">
-                                    Sign Up
-                                </a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="num">
-                                <span>2</span>
-                            </div>
-                            <div class="text">
-                                <h3>
-                                    Upload Products
-                                </h3>
-                                <p>
-                                    Upload your content, set your prices, discounts, and customize your listings.
-                                </p>
-                                <a href="#">
-                                    Upload Products
-                                </a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="num">
-                                <span>3</span>
-                            </div>
-                            <div class="text">
-                                <h3>
-                                    Launch & Grow
-                                </h3>
-                                <p>
-                                    Go live, attract customers, generate income, and build your brand with your Creator
-                                    Page.
-                                </p>
-                                <a href="#">
-                                    Start Earning
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="invite-power">
-                <div class="container">
-                    <div class="invite__title">
-                        <h2 class="section-title">
-                            Powerful Tools to Grow Your Travel Business on TrekGuider
-                        </h2>
-                    </div>
-                    <div class="invite-power__items">
-                        <div class="item">
-                            <div class="img">
-                                <img src="assets/imgs/pi1.png" alt="">
-                            </div>
-                            <div class="text">
-                                <h3>
-                                    Personal Landing Page
-                                </h3>
-                                <p>
-                                    Your all-in-one professional landing page. Showcase your brand, products, and social
-                                    media, attracting customers and partnership inquiries
-                                </p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="img">
-                                <img src="assets/imgs/pi2.png" alt="">
-
-                            </div>
-                            <div class="text">
-                                <h3>
-                                    Unlimited Content Formats
-                                </h3>
-                                <p>
-                                    Monetize any digital travel content you create: guides, maps, videos, courses,
-                                    templates, and more. Offer both one-time purchases and subscriptions.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="img">
-                                <img src="assets/imgs/pi3.png" alt="">
-                            </div>
-                            <div class="text">
-                                <h3>
-                                    Boost Sales with Articles
-                                </h3>
-                                <p>
-                                    Publish articles and helpful content to promote your products, engage your audience,
-                                    and increase your reach.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="img">
-                                <img src="assets/imgs/pi4.png" alt="">
-                            </div>
-                            <div class="text">
-                                <h3>
-                                    Direct Fan Support
-                                </h3>
-                                <p>
-                                    Let your fans support you directly with one-time tips or recurring subscriptions.
-                                    Get rewarded for your creativity.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="img">
-                                <img src="assets/imgs/pi5.png" alt="">
-                            </div>
-                            <div class="text">
-                                <h3>
-                                    Worldwide Payments
-                                </h3>
-                                <p>
-                                    Seamlessly accept payments from global buyers in any currency and payment method,
-                                    powered by Stripe. Expand your market and boost sales.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="img">
-                                <img src="assets/imgs/pi6.png" alt="">
-                            </div>
-                            <div class="text">
-                                <h3>
-                                    Global Marketplace
-                                </h3>
-                                <p>
-                                    Sign up and sell from any country, reach a global market no matter where you are.
-                                    TrekGuider is open to creators worldwide.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="img">
-                                <img src="assets/imgs/pi7.png" alt="">
-                            </div>
-                            <div class="text">
-                                <h3>
-                                    Trusted & Secure
-                                </h3>
-                                <p>
-                                    Benefit from a secure, US-based platform with robust copyright protection, automated
-                                    tax forms, and legal compliance. Sell with confidence.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="img">
-                                <img src="assets/imgs/pi8.png" alt="">
-                            </div>
-                            <div class="text">
-                                <h3>
-                                    Data-Driven Growth
-                                </h3>
-                                <p>
-                                    Track key performance indicators in real-time. Get full sales transparency to
-                                    analyze and optimize your income strategy.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="img">
-                                <img src="assets/imgs/pi9.png" alt="">
-                            </div>
-                            <div class="text">
-                                <h3>
-                                    Built-in Gift Feature
-                                </h3>
-                                <p>
-                                    Boost your sales potential! Buyers can easily purchase your non-subscription
-                                    products as gifts for friends and family, creating new revenue opportunities for
-                                    you.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="invite-honest">
-                <div class="container">
-                    <div class="invite-honest__title">
-                        <h2 class="section-title">
-                            Honest & Transparent Partnership
-                        </h2>
-                    </div>
-                    <div class="invite-honest__items">
-                        <div class="item">
-                            <span class="subtitle"></span>
-                            <div class="title">
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M8.92021 0.98092L10.4431 4.02321C10.5923 4.32188 10.8804 4.52898 11.2145 4.5769L14.6211 5.06726C15.4628 5.18878 15.7977 6.20887 15.1886 6.79337L12.7252 9.16045C12.4831 9.39322 12.3729 9.72783 12.4301 10.0564L13.0115 13.3983C13.1547 14.2249 12.2748 14.8557 11.5225 14.4646L8.47768 12.8857C8.17918 12.7308 7.82168 12.7308 7.52232 12.8857L4.4775 14.4646C3.72519 14.8557 2.84533 14.2249 2.98937 13.3983L3.56987 10.0564C3.62714 9.72783 3.51694 9.39322 3.27485 9.16045L0.8114 6.79337C0.202263 6.20887 0.537201 5.18878 1.37889 5.06726L4.78554 4.5769C5.11961 4.52898 5.40856 4.32188 5.55781 4.02321L7.07979 0.98092C7.45638 0.228691 8.54362 0.228691 8.92021 0.98092Z"
-                                        fill="#FFDB0C" stroke="#FFDB0C" stroke-width="0.5" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
-                                <h2>
-                                    Level 1: Beginner
-                                </h2>
-                            </div>
-                            <div class="text">
-                                <p>
-                                    Commission: 10%
-                                </p>
-                                <ul>
-                                    <li>
-                                        Sales up to $100
-                                    </li>
-                                    <li>
-                                        Free Storage: 300MB
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <span class="subtitle"></span>
-                            <div class="title">
-                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_5009_101696)">
-                                        <path
-                                            d="M18.7512 3.81348H16.1795C16.0147 3.81351 15.8536 3.86241 15.7166 3.95398C15.5796 4.04555 15.4728 4.17568 15.4098 4.32793C15.3467 4.48018 15.3302 4.64771 15.3623 4.80934C15.3945 4.97096 15.4738 5.11943 15.5903 5.23598L16.4953 6.14098L13.507 9.12848C13.3482 9.28022 13.137 9.36491 12.9174 9.36491C12.6978 9.36491 12.4866 9.28022 12.3278 9.12848L12.1862 8.98598C11.71 8.53104 11.0768 8.27716 10.4182 8.27716C9.75968 8.27716 9.12648 8.53104 8.65032 8.98598L4.40032 13.236C4.24373 13.393 4.15594 13.6058 4.15625 13.8276C4.15656 14.0493 4.24496 14.2619 4.40199 14.4185C4.55902 14.5751 4.77182 14.6629 4.99358 14.6625C5.21534 14.6622 5.4279 14.5738 5.58449 14.4168L9.83449 10.1668C9.99317 10.0149 10.2044 9.93006 10.4241 9.93006C10.6438 9.93006 10.855 10.0149 11.0137 10.1668L11.1553 10.3093C11.6317 10.7639 12.2648 11.0175 12.9232 11.0175C13.5817 11.0175 14.2148 10.7639 14.6912 10.3093L17.6795 7.32098L18.5845 8.22598C18.7014 8.3406 18.8495 8.41823 19.0103 8.44918C19.1711 8.48013 19.3375 8.46302 19.4886 8.39999C19.6397 8.33696 19.7689 8.23081 19.8601 8.09478C19.9513 7.95875 20.0003 7.79889 20.0012 7.63514V5.06348C20.0012 4.73196 19.8695 4.41401 19.635 4.17959C19.4006 3.94517 19.0827 3.81348 18.7512 3.81348Z"
-                                            fill="#158CE8" />
-                                        <path
-                                            d="M19.1667 18.8133H4.16667C3.50363 18.8133 2.86774 18.5499 2.3989 18.0811C1.93006 17.6123 1.66667 16.9764 1.66667 16.3133V1.33333C1.66667 1.11232 1.57887 0.900358 1.42259 0.744078C1.26631 0.587797 1.05435 0.5 0.833333 0.5C0.61232 0.5 0.400358 0.587797 0.244078 0.744078C0.0877974 0.900358 0 1.11232 0 1.33333L0 16.3133C0.00132321 17.418 0.440735 18.477 1.22185 19.2582C2.00296 20.0393 3.062 20.4787 4.16667 20.48H19.1667C19.3877 20.48 19.5996 20.3922 19.7559 20.2359C19.9122 20.0796 20 19.8677 20 19.6467C20 19.4257 19.9122 19.2137 19.7559 19.0574C19.5996 18.9011 19.3877 18.8133 19.1667 18.8133Z"
-                                            fill="#158CE8" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_5009_101696">
-                                            <rect width="20" height="20" fill="white" transform="translate(0 0.5)" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-
-                                <h2>
-                                    Level 2: Growth
-                                </h2>
-                            </div>
-                            <div class="text">
-                                <p>
-                                    Commission: 8%
-                                </p>
-                                <ul>
-                                    <li>
-                                        Sales up to $300
-                                    </li>
-                                    <li>
-                                        Free Storage: 500MB
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <span class="subtitle">New Seller Bonus for 30 Days!</span>
-                            <div class="title">
-                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M10.3651 2.81501C10.2446 2.77693 10.1142 2.78586 10.0001 2.84001C9.94371 2.8664 9.89369 2.90463 9.85343 2.95208C9.81317 2.99953 9.7836 3.0551 9.76673 3.11501L9.37007 4.64334C9.23133 5.17742 9.02993 5.69323 8.77007 6.18001C8.3659 6.93584 7.75507 7.51667 7.1884 8.00501L5.99007 9.03834C5.8985 9.1175 5.82698 9.21721 5.78136 9.32932C5.73573 9.44143 5.7173 9.56274 5.72757 9.68334L6.40423 17.5108C6.42069 17.701 6.50776 17.878 6.64828 18.0071C6.7888 18.1362 6.97257 18.208 7.1634 18.2083H11.0376C13.6509 18.2083 15.8534 16.39 16.2759 13.9475L16.8634 10.5475C16.8825 10.4379 16.8773 10.3255 16.8484 10.2181C16.8195 10.1107 16.7675 10.011 16.6959 9.92581C16.6244 9.84064 16.5352 9.77212 16.4344 9.72506C16.3336 9.67799 16.2238 9.65352 16.1126 9.65334H11.7951C10.9809 9.65334 10.3617 8.92334 10.4934 8.12001L11.0459 4.75001C11.1223 4.28846 11.1008 3.816 10.9826 3.36334C10.9491 3.24365 10.886 3.1343 10.7993 3.04533C10.7125 2.95637 10.6047 2.89063 10.4859 2.85418L10.3651 2.81501ZM9.45673 1.71418C9.85982 1.52063 10.3217 1.48873 10.7476 1.62501L10.8684 1.66418C11.5159 1.87251 12.0209 2.38918 12.1926 3.04918C12.3534 3.67084 12.3834 4.31918 12.2792 4.95251L11.7267 8.32251C11.725 8.33245 11.7255 8.34264 11.7282 8.35237C11.7308 8.3621 11.7356 8.37113 11.7421 8.37883C11.7486 8.38653 11.7567 8.39271 11.7659 8.39695C11.775 8.40118 11.785 8.40337 11.7951 8.40334H16.1117C17.3617 8.40334 18.3084 9.53001 18.0951 10.7608L17.5076 14.1608C16.9759 17.2342 14.2259 19.4583 11.0376 19.4583H7.1634C6.65973 19.4579 6.17451 19.2687 5.80349 18.9281C5.43247 18.5875 5.20259 18.1201 5.15923 17.6183L4.48173 9.79084C4.45432 9.47297 4.50273 9.15313 4.62297 8.8576C4.74321 8.56207 4.93185 8.29929 5.1734 8.09084L6.3734 7.05751C6.91923 6.58751 7.3784 6.13168 7.66673 5.59084C7.88104 5.19153 8.04666 4.76795 8.16007 4.32918L8.55673 2.80168C8.61856 2.56583 8.73113 2.34632 8.88658 2.15849C9.04203 1.97065 9.23661 1.81902 9.45673 1.71418ZM2.4734 8.40418C2.63445 8.39713 2.79199 8.45259 2.91312 8.55897C3.03424 8.66534 3.10958 8.8144 3.1234 8.97501L3.93173 18.3383C3.94542 18.4778 3.93055 18.6185 3.88802 18.752C3.84548 18.8855 3.77618 19.0089 3.68435 19.1148C3.59252 19.2206 3.48008 19.3066 3.3539 19.3674C3.22772 19.4283 3.09046 19.4629 2.95048 19.469C2.81051 19.475 2.67077 19.4525 2.53979 19.4027C2.40882 19.353 2.28936 19.2771 2.18871 19.1796C2.08807 19.0821 2.00835 18.9652 1.95442 18.8359C1.90049 18.7066 1.87349 18.5676 1.87507 18.4275V9.02834C1.87492 8.8671 1.93709 8.71204 2.0486 8.59557C2.1601 8.47909 2.3123 8.41106 2.4734 8.40418Z"
-                                        fill="#FC7361" />
-                                </svg>
-
-                                <h2>
-                                    Level 3: Pro
-                                </h2>
-                            </div>
-                            <div class="text">
-                                <p>
-                                    Commission: 5%
-                                </p>
-                                <ul>
-                                    <li>
-                                        Sales: $300+
-                                    </li>
-                                    <li>
-                                        Free Storage: 1GB
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <span class="subtitle">Level 4: Exclusive</span>
-                            <div class="title">
-                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_5009_71059)">
-                                        <path
-                                            d="M19.3507 5.28583L16.8416 1.89583C16.533 1.46445 16.1261 1.11281 15.6545 0.870064C15.1829 0.62732 14.6603 0.500461 14.1299 0.500001H5.87158C5.34378 0.499506 4.8234 0.624354 4.35327 0.864271C3.88315 1.10419 3.47671 1.45231 3.16742 1.88L0.613251 5.29417C0.197388 5.88058 -0.0173775 6.5859 0.00109982 7.30456C0.0195771 8.02322 0.270303 8.71657 0.715751 9.28083L8.04242 19.5542C8.27591 19.8498 8.5735 20.0886 8.91274 20.2524C9.25199 20.4163 9.62401 20.5009 10.0008 20.5C10.384 20.4992 10.7619 20.4106 11.1054 20.2408C11.449 20.0711 11.749 19.8247 11.9824 19.5208L19.2508 9.36167C19.7161 8.78916 19.9784 8.07841 19.9965 7.34082C20.0146 6.60323 19.7875 5.88048 19.3507 5.28583ZM15.4941 2.87583L18.0091 6.27417C18.0224 6.2925 18.0258 6.31417 18.0391 6.33333H13.9624L12.7724 2.16667H14.1299C14.3974 2.1675 14.6608 2.2323 14.8981 2.35567C15.1354 2.47904 15.3397 2.65739 15.4941 2.87583ZM10.0008 16.4317L7.75075 8H12.2508L10.0008 16.4317ZM7.77242 6.33333L8.96242 2.16667H11.0391L12.2291 6.33333H7.77242ZM4.51492 2.86417C4.66954 2.64866 4.87321 2.47302 5.1091 2.35174C5.34499 2.23046 5.60634 2.16702 5.87158 2.16667H7.22908L6.03908 6.33333H1.93242C1.94408 6.315 1.94742 6.2925 1.96075 6.275L4.51492 2.86417ZM2.04075 8.27083C1.98058 8.18585 1.92894 8.09513 1.88658 8H6.02742L8.52242 17.3583L2.04075 8.27083ZM11.4766 17.3667L13.9766 8H18.1316C18.0779 8.12439 18.0099 8.24212 17.9291 8.35083L11.4766 17.3667Z"
-                                            fill="#FF2C0C" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_5009_71059">
-                                            <rect width="20" height="20" fill="white" transform="translate(0 0.5)" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-
-
-                                <h2>
-                                    Level 4: Exclusive
-                                </h2>
-                            </div>
-                            <div class="text">
-                                <p>
-                                    Contact Us for Exclusive Commission
-                                </p>
-                                <ul>
-                                    <li>
-                                        Best Rates for Top Sellers
-                                    </li>
-                                    <li>
-                                        Unlimited
-
-                                    </li>
-                                </ul>
-                                <a href="#">
-                                    Contact Us
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <div class="breaker">
-                <div class="container">
-                    <div class="breaker__wrap">
-                        <div class="text">
-                            <p>
-                                Please note that Stripe payment processing fees are separate and payout fees also apply.
-                                Once you reach a commission level, it's locked in permanently.
-                            </p>
-                        </div>
-                        <div class="action">
-                            <a data-goto href="#" class="white-btn">
-                                Detailed Fee Information in FAQ.
-                            </a>
-                        </div>
-                    </div>
-                </div>
+            <div class="header__search">
+              <form action="#">
+                <button>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="7.33168"
+                      cy="7.19234"
+                      r="5.35902"
+                      stroke="#A4A0A0"
+                      stroke-width="1.5"
+                      stroke-linecap="square"
+                    />
+                    <path
+                      d="M10.9922 11.139L14.0278 14.1667"
+                      stroke="#A4A0A0"
+                      stroke-width="1.5"
+                      stroke-linecap="square"
+                    />
+                  </svg>
+                </button>
+                <input type="text" placeholder="Search the site..." />
+              </form>
             </div>
-
-            <section class="faq">
-                <div class="container">
-                    <div class="faq__title">
-                        <h2 class="section-title">
-                            Frequently Asked Questions
-                        </h2>
-
-                    </div>
-                    <div class="faq__items">
-                        <p class="faq-subtitle">
-                            Getting Started
-                        </p>
-                        <div class="faq__item">
-                            <button>
-                                Who can become a seller on TrekGuider?
-                            </button>
-                            <div class="faq__text">
-                                <p>
-                                    Anyone who creates travel content and is 18 years of age or older can become a
-                                    seller on TrekGuider, regardless of citizenship or country of residence. We welcome
-                                    both U.S. residents and non-U.S. residents, as well as creators from most countries
-                                    worldwide. The only exceptions are regions currently under international sanctions.
-                                    For detailed registration requirements and a list of excluded regions, please refer
-                                    to our [link to Terms and Conditions] Terms and Conditions.
-                                </p>
-                            </div>
-                        </div>
-                        <p class="faq-subtitle">
-                            Selling Your Content
-                        </p>
-                        <div class="faq__item">
-                            <button>
-                                What kind of content can I sell on TrekGuider?
-                            </button>
-                            <div class="faq__text">
-                                <p>
-                                    Anyone who creates travel content and is 18 years of age or older can become a
-                                    seller on TrekGuider, regardless of citizenship or country of residence. We welcome
-                                    both U.S. residents and non-U.S. residents, as well as creators from most countries
-                                    worldwide. The only exceptions are regions currently under international sanctions.
-                                    For detailed registration requirements and a list of excluded regions, please refer
-                                    to our [link to Terms and Conditions] Terms and Conditions.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="faq__item">
-                            <button>
-                                How does TrekGuider protect my content and copyrights?
-                            </button>
-                            <div class="faq__text">
-                                <p>
-                                    Anyone who creates travel content and is 18 years of age or older can become a
-                                    seller on TrekGuider, regardless of citizenship or country of residence. We welcome
-                                    both U.S. residents and non-U.S. residents, as well as creators from most countries
-                                    worldwide. The only exceptions are regions currently under international sanctions.
-                                    For detailed registration requirements and a list of excluded regions, please refer
-                                    to our [link to Terms and Conditions] Terms and Conditions.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="faq__item">
-                            <button>
-                                How do refunds work on TrekGuider, and how can I manage them?
-                            </button>
-                            <div class="faq__text">
-                                <p>
-                                    Anyone who creates travel content and is 18 years of age or older can become a
-                                    seller on TrekGuider, regardless of citizenship or country of residence. We welcome
-                                    both U.S. residents and non-U.S. residents, as well as creators from most countries
-                                    worldwide. The only exceptions are regions currently under international sanctions.
-                                    For detailed registration requirements and a list of excluded regions, please refer
-                                    to our [link to Terms and Conditions] Terms and Conditions.
-                                </p>
-                            </div>
-                        </div>
-                        <p class="faq__subtitle">
-                            Your Creator Page & Features
-                        </p>
-                        <div class="faq__item">
-                            <button>
-                                What is a TrekGuider Creator Page and why do I need one?
-                            </button>
-                            <div class="faq__text">
-                                <p>
-                                    Anyone who creates travel content and is 18 years of age or older can become a
-                                    seller on TrekGuider, regardless of citizenship or country of residence. We welcome
-                                    both U.S. residents and non-U.S. residents, as well as creators from most countries
-                                    worldwide. The only exceptions are regions currently under international sanctions.
-                                    For detailed registration requirements and a list of excluded regions, please refer
-                                    to our [link to Terms and Conditions] Terms and Conditions.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="faq__item">
-                            <button>
-                                How do I accept tips (donations) from fans on my Creator Page?
-                            </button>
-                            <div class="faq__text">
-                                <p>
-                                    Anyone who creates travel content and is 18 years of age or older can become a
-                                    seller on TrekGuider, regardless of citizenship or country of residence. We welcome
-                                    both U.S. residents and non-U.S. residents, as well as creators from most countries
-                                    worldwide. The only exceptions are regions currently under international sanctions.
-                                    For detailed registration requirements and a list of excluded regions, please refer
-                                    to our [link to Terms and Conditions] Terms and Conditions.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="invite__bottom">
-                <div class="container">
-                    <div class="invite-bottom__wrap">
-                        <div class="invite-bottom__text">
-                            <h2>
-                                Your Time to Monetize is Now. Start Selling Travel Content on TrekGuider!
-                            </h2>
-                            <p>
-                                Join a community of successful travel creators and start monetizing your passion and
-                                expertise today.
-                            </p>
-                            <a class="main-btn" href="#">
-                                Start Earning Today
-                            </a>
-                        </div>
-                        <div class="invite-bottom__img">
-                            <img src="assets/imgs/invite-bottom.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <nav class="header__nav">
+              <ul>
+                <li>
+                  <a href="#"> All products </a>
+                </li>
+                <li>
+                  <a href="#"> Home </a>
+                </li>
+                <li>
+                  <a href="#"> Creators </a>
+                </li>
+                <li>
+                  <a href="#"> Travel Insights </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__profile">
+              <a class="header__profile-item" href="#">
+                <img src="assets/imgs/icons/profile-icon.svg" alt="" />
+                <span> @talmaev1 </span>
+              </a>
+            </div>
+            <div class="header__actions">
+              <a class="header-favorite" href="#">
+                <img src="assets/imgs/icons/fav-icon.svg" alt="" />
+                <span class="fav-count">10</span>
+              </a>
+              <a href="#" class="header-cart">
+                <img src="assets/imgs/icons/cart.svg" alt="" />
+                <span class="fav-count">10</span>
+              </a>
+            </div>
+          </div>
         </div>
-        <footer class="footer">
-            <div class="container">
-                <div class="footer__top">
-                    <div class="col">
-                        <p class="footer__title">
-                            Explore
-                        </p>
-                        <nav>
-                            <ul>
-                                <li>
-                                    <a href="#">Home</a>
-                                </li>
-                                <li>
-                                    <a href="#">All Products</a>
-                                </li>
-                                <li>
-                                    <a href="#">Favourite</a>
-                                </li>
-                                <li>
-                                    <a href="#">Creators</a>
-                                </li>
-                                <li>
-                                    <a href="#">Travel Insights</a>
-                                </li>
-                            </ul>
-                        </nav>
+      </header>
+      <div class="the-content-wrap">
+        <div class="container">
+          <div class="the-profile__sidebar">
+            <a href="#">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.00091 11.1142C11.4432 11.1079 13.5198 12.2293 14.2831 14.6432C12.7446 15.5811 10.9336 15.9423 9.00091 15.9376C7.06826 15.9423 5.25727 15.5811 3.71875 14.6432C4.48293 12.2267 6.55602 11.1079 9.00091 11.1142Z"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="square"
+                />
+                <circle
+                  cx="9.0023"
+                  cy="5.3773"
+                  r="3.3148"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="square"
+                />
+              </svg>
+            </a>
+            <a href="#">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_3066_70773)">
+                  <path
+                    d="M15 5.25H13.6965C14.1206 4.8762 14.4572 4.41366 14.6824 3.8952C14.9077 3.37674 15.0161 2.81506 15 2.25C15 2.05109 14.921 1.86032 14.7803 1.71967C14.6397 1.57902 14.4489 1.5 14.25 1.5C14.0511 1.5 13.8603 1.57902 13.7197 1.71967C13.579 1.86032 13.5 2.05109 13.5 2.25C13.5 4.2165 11.7218 4.8975 10.3695 5.13075C10.8686 4.24579 11.1691 3.26278 11.25 2.25C11.25 1.65326 11.0129 1.08097 10.591 0.65901C10.169 0.237053 9.59674 0 9 0C8.40326 0 7.83097 0.237053 7.40901 0.65901C6.98705 1.08097 6.75 1.65326 6.75 2.25C6.83093 3.26278 7.13139 4.24579 7.6305 5.13075C6.27825 4.8975 4.5 4.2165 4.5 2.25C4.5 2.05109 4.42098 1.86032 4.28033 1.71967C4.13968 1.57902 3.94891 1.5 3.75 1.5C3.55109 1.5 3.36032 1.57902 3.21967 1.71967C3.07902 1.86032 3 2.05109 3 2.25C2.98388 2.81506 3.09231 3.37674 3.31758 3.8952C3.54285 4.41366 3.87945 4.8762 4.3035 5.25H3C2.20435 5.25 1.44129 5.56607 0.87868 6.12868C0.316071 6.69129 0 7.45435 0 8.25L0 9C0 9.39782 0.158035 9.77936 0.43934 10.0607C0.720644 10.342 1.10218 10.5 1.5 10.5V14.25C1.50119 15.2442 1.89666 16.1973 2.59966 16.9003C3.30267 17.6033 4.2558 17.9988 5.25 18H12.75C13.7442 17.9988 14.6973 17.6033 15.4003 16.9003C16.1033 16.1973 16.4988 15.2442 16.5 14.25V10.5C16.8978 10.5 17.2794 10.342 17.5607 10.0607C17.842 9.77936 18 9.39782 18 9V8.25C18 7.45435 17.6839 6.69129 17.1213 6.12868C16.5587 5.56607 15.7956 5.25 15 5.25ZM9 1.5C9.19891 1.5 9.38968 1.57902 9.53033 1.71967C9.67098 1.86032 9.75 2.05109 9.75 2.25C9.65946 3.04712 9.40405 3.81668 9 4.50975C8.59595 3.81668 8.34054 3.04712 8.25 2.25C8.25 2.05109 8.32902 1.86032 8.46967 1.71967C8.61032 1.57902 8.80109 1.5 9 1.5ZM1.5 8.25C1.5 7.85218 1.65804 7.47064 1.93934 7.18934C2.22064 6.90804 2.60218 6.75 3 6.75H8.25V9H1.5V8.25ZM3 14.25V10.5H8.25V16.5H5.25C4.65326 16.5 4.08097 16.2629 3.65901 15.841C3.23705 15.419 3 14.8467 3 14.25ZM15 14.25C15 14.8467 14.7629 15.419 14.341 15.841C13.919 16.2629 13.3467 16.5 12.75 16.5H9.75V10.5H15V14.25ZM9.75 9V6.75H15C15.3978 6.75 15.7794 6.90804 16.0607 7.18934C16.342 7.47064 16.5 7.85218 16.5 8.25V9H9.75Z"
+                    fill="#A4A0A0"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_3066_70773">
+                    <rect width="18" height="18" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+
+              Referral Program
+            </a>
+            <a href="#">
+              <svg
+                width="16"
+                height="17"
+                viewBox="0 0 16 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M14.6031 5.71765L14.1363 4.90758C13.7414 4.22214 12.8661 3.98568 12.1798 4.37898V4.37898C11.853 4.57145 11.4632 4.62605 11.0961 4.53075C10.7291 4.43545 10.4151 4.19808 10.2232 3.87097C10.0998 3.66305 10.0335 3.42623 10.031 3.18447V3.18447C10.0422 2.79686 9.89592 2.42124 9.62563 2.14319C9.35534 1.86514 8.98401 1.70834 8.59624 1.7085H7.65573C7.27583 1.70849 6.91159 1.85987 6.64361 2.12915C6.37562 2.39842 6.22599 2.76338 6.22782 3.14328V3.14328C6.21656 3.92763 5.57747 4.55755 4.79303 4.55747C4.55127 4.55496 4.31445 4.48865 4.10653 4.36525V4.36525C3.42015 3.97195 2.54494 4.20841 2.15001 4.89385L1.64887 5.71765C1.25442 6.40223 1.48766 7.27689 2.17061 7.67417V7.67417C2.61453 7.93047 2.88801 8.40413 2.88801 8.91673C2.88801 9.42934 2.61453 9.903 2.17061 10.1593V10.1593C1.48853 10.5539 1.25503 11.4264 1.64887 12.109V12.109L2.12255 12.9259C2.30759 13.2598 2.61806 13.5062 2.98525 13.6105C3.35245 13.7149 3.74609 13.6686 4.07907 13.482V13.482C4.40642 13.2909 4.7965 13.2386 5.16261 13.3366C5.52873 13.4346 5.84053 13.6747 6.02873 14.0037C6.15213 14.2116 6.21844 14.4484 6.22095 14.6902V14.6902C6.22095 15.4826 6.86332 16.125 7.65573 16.125H8.59624C9.38597 16.125 10.0272 15.4868 10.031 14.6971V14.6971C10.0292 14.316 10.1798 13.95 10.4492 13.6805C10.7187 13.411 11.0847 13.2604 11.4658 13.2623C11.707 13.2687 11.9428 13.3348 12.1523 13.4545V13.4545C12.8369 13.8489 13.7115 13.6157 14.1088 12.9328V12.9328L14.6031 12.109C14.7944 11.7806 14.8469 11.3894 14.749 11.0222C14.6511 10.655 14.4108 10.342 14.0814 10.1524V10.1524C13.7519 9.96291 13.5116 9.64987 13.4137 9.28265C13.3158 8.91542 13.3683 8.5243 13.5596 8.19591C13.684 7.97869 13.8641 7.79859 14.0814 7.67417V7.67417C14.7602 7.27711 14.9929 6.40756 14.6031 5.72451V5.72451V5.71765Z"
+                  stroke="#A4A0A0"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <circle
+                  cx="8.12946"
+                  cy="8.91675"
+                  r="1.97712"
+                  stroke="#A4A0A0"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+
+              Settings
+            </a>
+          </div>
+          <div class="the-content__content">
+            <div class="the-content__head">
+              <div class="text">
+                <h2>Turn Your Travel Passion into Profit!</h2>
+              </div>
+              <div class="actions">
+                <a class="main-btn trans" href="#"> Become a Creator </a>
+                <a class="main-btn" href="#"> Learn More </a>
+              </div>
+            </div>
+            <div class="invite-page__tabs">
+              <div class="btns">
+                <button>Products</button>
+                <button>Subscriptions</button>
+              </div>
+              <div class="count">
+                <p>Items <span> 10 </span></p>
+              </div>
+            </div>
+            <div class="invite-page__items-head">
+                <div class="col">Date</div>
+                <div class="col">Order</div>
+                <div class="col">Product</div>
+                <div class="col">Actions</div>
+                <div class="col">Price</div>
+            </div>
+            <div class="invite-page__items">
+                <div class="invite-page__item">
+                    <div class="date">
+                        <span>05.28.2025</span>
                     </div>
-                    <div class="col">
-                        <p class="footer__title">
-                            Partnerships
-                        </p>
-                        <ul>
-                            <li>
-                                <a href="#">For Creators</a>
-                            </li>
-                            <li>
-                                <a href="#">For Investors & Partners</a>
-                            </li>
-                            <li>
-                                <a href="#">Referral Program</a>
-                            </li>
-                            <li>
-                                <a href="#">Help Center</a>
-                            </li>
-                        </ul>
+                    <div class="order">
+                        <span>
+                            #J4RW45Z
+                        </span>
                     </div>
-                    <div class="col">
-                        <p class="footer__title">
-                            Legal
+                    <div class="name">
+                        <div class="img">
+                            <img src="assets/imgs/item-preview.png" alt="">
+                        </div>
+                        <p>
+                            A Guide to Getting to Know North Korea
                         </p>
-                        <ul>
-                            <li>
-                                <a href="#">Terms and Conditions</a>
-                            </li>
-                            <li>
-                                <a href="#">Privacy Policy</a>
-                            </li>
-                            <li>
-                                <a href="#">Cookie Policy</a>
-                            </li>
-                            <li>
-                                <a href="#">More Policies</a>
-                            </li>
-                        </ul>
                     </div>
-                    <div class="col">
-                        <p class="footer__title">
-                            My Account
-                        </p>
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    Join / Sign In
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Forgot Password?
-                                </a>
-                            </li>
-                        </ul>
+                    <div class="actions">
+                        <div class="col">
+                            <a class="orange" href="#">
+                                View & Download
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a class="black" href="#">Leave Review</a>
+                            <a class="gray" href="#">Refund</a>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <span>
+                            1000$
+                        </span>
                     </div>
                 </div>
-                <div class="footer__bottom">
-                    <div class="row">
+                <div class="invite-page__item">
+                    <div class="date">
+                        <span>05.28.2025</span>
+                    </div>
+                    <div class="order">
+                        <span>
+                            #J4RW45Z
+                        </span>
+                    </div>
+                    <div class="name">
+                        <div class="img">
+                            <img src="assets/imgs/item-preview.png" alt="">
+                        </div>
+                        <p>
+                            A Guide to Getting to Know North Korea
+                        </p>
+                    </div>
+                    <div class="actions">
                         <div class="col">
-                            <a class="footer__title" href="#">
-                                <img src="assets/imgs/icons/footer-title.svg" alt="">
+                            <a class="orange" href="#">
+                                View & Download
                             </a>
                         </div>
-                        <div class="col footer__socials">
-                            <a href="#">
-                                <img src="assets/imgs/icons/footer-facebook.svg" alt="">
-                            </a>
-                            <a href="#">
-                                <img src="assets/imgs/icons/footer-xai.svg" alt="">
-                            </a>
+                        <div class="col">
+                            <a class="black" href="#">Leave Review</a>
+                            <a class="gray" href="#">Refund</a>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="price">
                         <span>
-                            2025 TrekGuider Ink.
+                            1000$
                         </span>
+                    </div>
+                </div>
+                <div class="invite-page__item">
+                    <div class="date">
+                        <span>05.28.2025</span>
+                    </div>
+                    <div class="order">
+                        <span>
+                            #J4RW45Z
+                        </span>
+                    </div>
+                    <div class="name">
+                        <div class="img">
+                            <img src="assets/imgs/item-preview.png" alt="">
+                        </div>
                         <p>
-                            design by Agency <b>moloko69</b>
+                            A Guide to Getting to Know North Korea
                         </p>
+                    </div>
+                    <div class="actions">
+                        <div class="col">
+                            <a class="orange" href="#">
+                                View & Download
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a class="black" href="#">Leave Review</a>
+                            <a class="gray" href="#">Refund</a>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <span>
+                            1000$
+                        </span>
                     </div>
                 </div>
             </div>
-        </footer>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__top">
+            <div class="col">
+              <p class="footer__title">Explore</p>
+              <nav>
+                <ul>
+                  <li>
+                    <a href="#">Home</a>
+                  </li>
+                  <li>
+                    <a href="#">All Products</a>
+                  </li>
+                  <li>
+                    <a href="#">Favourite</a>
+                  </li>
+                  <li>
+                    <a href="#">Creators</a>
+                  </li>
+                  <li>
+                    <a href="#">Travel Insights</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col">
+              <p class="footer__title">Partnerships</p>
+              <ul>
+                <li>
+                  <a href="#">For Creators</a>
+                </li>
+                <li>
+                  <a href="#">For Investors & Partners</a>
+                </li>
+                <li>
+                  <a href="#">Referral Program</a>
+                </li>
+                <li>
+                  <a href="#">Help Center</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col">
+              <p class="footer__title">Legal</p>
+              <ul>
+                <li>
+                  <a href="#">Terms and Conditions</a>
+                </li>
+                <li>
+                  <a href="#">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#">Cookie Policy</a>
+                </li>
+                <li>
+                  <a href="#">More Policies</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col">
+              <p class="footer__title">My Account</p>
+              <ul>
+                <li>
+                  <a href="#"> Join / Sign In </a>
+                </li>
+                <li>
+                  <a href="#"> Forgot Password? </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="row">
+              <div class="col">
+                <a class="footer__title" href="#">
+                  <img src="assets/imgs/icons/footer-title.svg" alt="" />
+                </a>
+              </div>
+              <div class="col footer__socials">
+                <a href="#">
+                  <img src="assets/imgs/icons/footer-facebook.svg" alt="" />
+                </a>
+                <a href="#">
+                  <img src="assets/imgs/icons/footer-xai.svg" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="row">
+              <span> 2025 TrekGuider Ink. </span>
+              <p>design by Agency <b>moloko69</b></p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
-</body>
-
+  </body>
 </html>
