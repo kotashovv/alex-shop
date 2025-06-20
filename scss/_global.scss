@@ -35,9 +35,19 @@ body {
     border: none;
     transition: .35s ease;
     cursor: pointer;
-
+    border: 1px solid $accent;
     &:hover {
         background-color: $accent2;
+        border-color: $accent2;
+    }
+    &.trans-btn {
+        border: 1px solid $accent;
+        color: $black;
+        background-color: transparent;
+        &:hover {
+            color: #fff;
+            background-color: $accent;
+        }
     }
 }
 
