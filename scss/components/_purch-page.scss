@@ -1,12 +1,14 @@
 .the-content-wrap {
     padding: 50px 0;
     box-sizing: border-box;
+
+    .container {
+        display: flex;
+        gap: 20px;
+    }
 }
 
-.container {
-    display: flex;
-    gap: 20px;
-}
+
 
 .the-profile {
 
@@ -135,18 +137,20 @@
 }
 
 
-.referral {
+.purch {
 
-    // .referral__tabs
+    // .purch__tabs
 
     &__tabs {
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin-bottom: 30px;
+
         .btns {
             display: flex;
             align-items: stretch;
+
             button {
                 box-sizing: border-box;
                 padding: 8px 20px;
@@ -156,16 +160,20 @@
                 font-size: 14px;
                 margin: 0;
                 background-color: transparent;
-                    cursor: pointer;
+                cursor: pointer;
+
                 &:hover {
                     background-color: #dfdfdf;
                 }
+
                 &:first-child {
                     border-radius: 8px 0 0 8px;
                 }
+
                 &:last-child {
                     border-radius: 0 8px 8px 0;
                 }
+
                 &.active {
                     background-color: $accent2;
                     color: #ffff;
@@ -173,14 +181,17 @@
                 }
             }
         }
+
         .count {
             display: flex;
             align-items: center;
+
             p {
                 font-size: 14px;
                 color: $black;
                 margin: 0;
                 display: block;
+
                 span {
                     color: $gray2;
                     padding-left: 10px;
@@ -190,40 +201,46 @@
 
     }
 
-    // .referral__items-head
+    // .purch__items-head
 
     &__items-head {
         display: flex;
         margin-bottom: 20px;
+
         .col {
             display: block;
             color: $black;
             font-size: 14px;
             font-weight: 400;
+
             &:nth-child(1) {
                 width: 11%;
             }
+
             &:nth-child(2) {
                 width: 11%;
             }
+
             &:nth-child(3) {
                 width: 40%;
             }
+
             &:nth-child(4) {
                 width: 34%;
             }
+
             &:nth-child(5) {
                 width: 5%;
             }
-            
+
         }
     }
 
-    // .referral__items
+    // .purch__items
 
     &__items {}
 
-    // .referral__item
+    // .purch__item
 
     &__item {
         display: flex;
@@ -231,40 +248,49 @@
         background-color: #fff;
         border-radius: 20px;
         margin-bottom: 20px;
+
         >div {
             box-sizing: border-box;
             padding-right: 10px;
+
             &:last-child {
                 padding-right: 0;
             }
         }
+
         &:last-child {
             margin-bottom: 0;
         }
+
         .date {
             font-size: 12px;
             color: $gray2;
             box-sizing: border-box;
             width: calc(11% - 10px);
         }
+
         .order {
             width: 11%;
             font-size: 12px;
             color: $gray2;
         }
+
         .name {
             display: flex;
             width: 40%;
+
             p {
                 margin: 0;
                 display: block;
                 color: $black;
                 font-size: 14px;
             }
+
             .img {
                 max-width: 60px;
                 width: 100%;
                 margin-right: 10px;
+
                 img {
                     display: block;
                     box-sizing: border-box;
@@ -274,20 +300,24 @@
                 }
             }
         }
+
         .price {
             font-size: 14px;
             color: $gray2;
             width: 5%;
         }
+
         .actions {
             display: flex;
             gap: 10px;
             width: 34%;
+
             .col {
                 &:first-child {
                     margin-right: 40px;
                 }
             }
+
             a {
                 font-size: 16px;
                 text-decoration: none;
@@ -296,17 +326,21 @@
                 border-bottom: 1px dotted #000;
                 padding-bottom: 2px;
                 margin-bottom: 10px;
+
                 &:last-child {
                     margin-bottom: 0;
                 }
+
                 &.orange {
                     color: $accent;
                     border-color: $accent;
                 }
+
                 &.black {
                     color: $black;
                     border-color: $black;
                 }
+
                 &.gray {
                     color: $gray2;
                     border-color: $gray2;
