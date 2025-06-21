@@ -751,7 +751,7 @@ body {
   padding: 40px 40px;
   background-color: #fff;
   border-radius: 10px;
-  margin: 0 40px;
+  margin: 0 auto;
 }
 .verification-form__wrap .col {
   max-width: 605px;
