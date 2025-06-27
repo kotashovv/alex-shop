@@ -36,14 +36,17 @@ body {
     transition: .35s ease;
     cursor: pointer;
     border: 1px solid $accent;
+
     &:hover {
         background-color: $accent2;
         border-color: $accent2;
     }
+
     &.trans-btn {
         border: 1px solid $accent;
         color: $black;
         background-color: transparent;
+
         &:hover {
             color: #fff;
             background-color: $accent;
@@ -95,6 +98,7 @@ body {
     position: relative;
     background-color: $gray;
     border-radius: 8px;
+
     span {
         width: 24px;
         height: 2px;
@@ -113,6 +117,7 @@ body {
         position: absolute;
         left: 15px;
     }
+
     &::after {
         content: '';
         width: 24px;
@@ -140,4 +145,32 @@ body {
     background-color: #fff;
     border: 1px solid #D6D2D2;
     border-radius: 20px;
+}
+
+
+body {
+    --sb-track-color: #cacaca;
+    --sb-thumb-color: #fc7361;
+    --sb-size: 3px;
+}
+
+body::-webkit-scrollbar {
+    width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 3px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 3px;
+
+}
+
+@supports not selector(::-webkit-scrollbar) {
+    body {
+        scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+    }
 }
