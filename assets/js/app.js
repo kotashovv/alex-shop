@@ -98,25 +98,40 @@ document.addEventListener("DOMContentLoaded", () => {
         let parentItem = e.target.closest(".faq__item");
 
         if (parentItem.classList.contains("active")) {
-            CloseFaq(parentItem);
+          CloseFaq(parentItem);
         } else {
-            OpenFaq(parentItem);
+          OpenFaq(parentItem);
         }
       });
     });
 
-
-    function CloseFaq(item = null){
-        faqItem.forEach(item=>{
-            item.closest('.faq__item').classList.remove('active');
-        })
+    function CloseFaq(item = null) {
+      faqItem.forEach((item) => {
+        item.closest(".faq__item").classList.remove("active");
+      });
     }
-    function OpenFaq(item){
-        CloseFaq();
-        item.classList.add('active');
+    function OpenFaq(item) {
+      CloseFaq();
+      item.classList.add("active");
     }
   }
 
+  const footerAccords = document.querySelectorAll(".footer__title");
 
-  
+  if (footerAccords.length != 0) {
+    footerAccords.forEach((item) => {
+      item.addEventListener("click", (e) => {
+        const target = e.target;
+        let targetList = target.nextElementSibling.querySelector("ul");
+
+        if (target.classList.contains("active")) {
+          target.classList.remove('active');
+          targetList.classList.remove('active');
+        } else {
+          target.classList.add('active');
+          targetList.classList.add("active");
+        }
+      });
+    });
+  }
 });

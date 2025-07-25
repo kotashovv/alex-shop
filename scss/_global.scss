@@ -169,7 +169,7 @@ body::-webkit-scrollbar-thumb {
 
 }
 
-@supports not selector(::-webkit-scrollbar) {
+@supports (scrollbar-color: red blue) {
     body {
         scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
     }
