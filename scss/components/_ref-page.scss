@@ -447,3 +447,109 @@
 .head-comm {
     flex: 1.5;
 }
+
+
+@media(max-width:1200px) {
+    .rp-top {
+        &__body {
+            flex-direction: column;
+        }
+        &__balance {
+            width: 100%;
+            max-width: none;
+            margin: 0 0 20px;
+        }
+        &__info {
+            width: 100%;
+            max-width: none;
+            margin: 0;
+        }
+    }
+
+    .rp-share {
+        &__action {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+}
+
+@media(max-width:768px) {
+    .rp-share {
+        &__cols {
+            flex-direction: column;
+            .col {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                max-width: none;
+                &:first-child {
+                    border-right: none;
+                    padding-right: 0;
+                    margin-bottom: 20px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #D6D2D2;
+                }
+                &:last-child {
+                    padding-left: 0;
+                    
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:560px) {
+
+    .rp-top {
+        &__info {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0;
+            .col {
+                max-width: none;
+                width: 100%;
+                margin: 0 0 20px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+            }
+        }
+        &__balance {
+            .actions {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    }
+    .rp-share {
+        &__action {
+            .socials {
+                ul {
+                    li {
+                        a {
+                            display: block;
+                            width: 33px;
+                            height: 33px;
+                            svg {
+                                width: 100%;
+                                box-sizing: border-box;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .rp-table {
+        &__head {
+            overflow: auto;
+            >div {
+                white-space: nowrap;
+            }
+        }
+    }
+}
