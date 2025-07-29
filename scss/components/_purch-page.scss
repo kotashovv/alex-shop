@@ -24,15 +24,18 @@
     height: fit-content;
     position: sticky;
     top: 30px;
+
     .the-profile__accord-button {
-        display: none;
+      display: none;
     }
+
     .the-profile__wrap {
-        display: flex;
-        align-items: stretch;
-        width: 100%;
-        flex-direction: column;
+      display: flex;
+      align-items: stretch;
+      width: 100%;
+      flex-direction: column;
     }
+
     a {
       align-items: center;
       transition: 0.35s ease;
@@ -51,6 +54,7 @@
         color: #fff;
 
         svg {
+
           path,
           circle {
             stroke: #fff;
@@ -63,6 +67,7 @@
         color: #fff;
 
         svg {
+
           path,
           circle {
             stroke: #fff;
@@ -233,8 +238,7 @@
 
   // .purch__items
 
-  &__items {
-  }
+  &__items {}
 
   // .purch__item
 
@@ -245,7 +249,7 @@
     border-radius: 20px;
     margin-bottom: 20px;
 
-    > div {
+    >div {
       box-sizing: border-box;
       padding-right: 10px;
 
@@ -350,15 +354,18 @@
   .the-content-wrap {
     .container {
       flex-direction: column;
+
       .the-profile__sidebar {
         width: 100%;
         max-width: none;
         position: static;
+
         .the-profile__wrap {
-            display: flex;
-            flex-direction: row;
-            width: 100%;
+          display: flex;
+          flex-direction: row;
+          width: 100%;
         }
+
         a {
           width: 100%;
           max-width: none;
@@ -368,4 +375,64 @@
       }
     }
   }
+}
+
+
+
+@media(max-width:768px) {
+  .content-table-wrap {
+    overflow: auto; 
+
+    .purch {
+      &__item {
+        width: max-content;
+      }
+    }
+  }
+
+  .the-content {
+    &__head {
+      flex-direction: column;
+      align-items: flex-start;
+
+      .text {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media(max-width:560px) {
+  .the-content-wrap {
+    .container {
+      .the-profile__sidebar {
+        .the-profile__wrap {
+          flex-direction: column;
+
+          a {
+            justify-content: flex-start;
+          }
+        }
+      }
+    }
+  }
+
+  .the-content {
+    &__head {
+      .text {
+        h2 {
+          font-size: 18px;
+          font-weight: 400;
+        }
+      }
+      .actions {
+        flex-direction: column;
+        button, a {
+          box-sizing: border-box;
+        }
+      }
+    }
+  }
+
+  
 }
